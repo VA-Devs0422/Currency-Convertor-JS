@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="carousel-main">
+        <div class="carousel-inside"></div>
+    </div>
+    <div class="container">
+        <div class="left">
+            <input type="number" name="input" id="input" placeholder="Enter amount">
+        </div>
+        <div class="middle">
+            <div class="middle-top">
+                <div class="from-div">
+                    <label for="from">From:</label>
+                    <select id="from" name="from">
+                        <option value="usd">usd</option>
+                    </select>
+                </div>
+                <div class="switch">
+                    <img src="./resources/icons/swap.png" alt="Switch">
+                </div>
+                <div class="to-div">
+                    <label for="to">To:</label>
+                    <select id="to" name="to">
+                        <!-- options to be injected by js -->
+                        <option value="inr">inr</option>
+                    </select>
+                </div>
+            </div>
+            <div class="middle-bottom">
+                <button class="convert">Convert</button>
+            </div>
+        </div>
+        <div class="right">
+            <input type="number" name="output" id="output" placeholder="Converted amount" disabled>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
